@@ -18,7 +18,7 @@ pyanchorknit imgs/Johannes-Vermeer-Girl-With-a-Pearl-Earring.jpg --n-jobs 16 --n
 ```
 
 ### Output image
-![Girl with a Pearl Earring](imgs/Johannes-Vermeer-Girl-With-a-Pearl-Earring-weave.png)
+<img src="imgs/Johannes-Vermeer-Girl-With-a-Pearl-Earring-weave.png" alt="drawing" width="400"/>
 
 ### Output JSON
 ```json
