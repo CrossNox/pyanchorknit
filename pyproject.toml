@@ -2,11 +2,18 @@
 name = "pyanchorknit"
 version = "0.1.0"
 description = "Weaving algorithm."
+licence = "MIT"
 readme = "README.md"
 authors = ["CrossNox <ijmermet@gmail.com>"]
+homepage = "https://github.com/CrossNox/pyanchorknit"
+repository = "https://github.com/CrossNox/pyanchorknit"
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Topic :: Artistic Software"
+]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.7"
 typer = "^0.4.0"
 opencv-python = "^4.5.3"
 scikit-image = "^0.18.3"
