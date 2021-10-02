@@ -1,0 +1,35 @@
+[MASTER]
+extension-pkg-allow-list=cv2
+
+[TYPECHECK]
+generated-members=cv2
+
+[FORMAT]
+# Good variable names which should always be accepted, separated by a comma
+good-names=i,j,k,e,_,pk,x,y,f,logger,config,df,s3
+max-line-length = 88  # as in black
+
+
+[MISCELLANEOUS]
+
+# List of note tags to take in consideration, separated by a comma.
+notes=FIXME,XXX,TODO
+
+[MESSAGES CONTROL]
+
+disable =
+    # Disable conventions and refactors warnings
+    C,
+    R,
+    # Errors
+    import-error,
+    no-name-in-module,
+    # Warnings:
+    dangerous-default-value,
+    lost-exception,
+    using-constant-test,
+    broad-except,
+    fixme, # no clue why notes does not fix it
+    W1203,
+    logging-format-interpolation,
+    unspecified-encoding
