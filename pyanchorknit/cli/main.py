@@ -15,6 +15,12 @@ def main(
         "./traces.json", help="Path to output json of traces"
     ),
     n_edges: int = typer.Option(512, help="Number of points around the edge"),
+    intensity_threshold: float = typer.Option(
+        0.1,
+        min=0,
+        max=1,
+        help="Min intensity threshold respect to the max intensity threshold to process",
+    ),
     maxlines: int = typer.Option(2000, help="Max number of traces"),
     n_jobs: int = typer.Option(8, help="Max number of jobs to use"),
 ):
@@ -26,4 +32,5 @@ def main(
         n_edges=n_edges,
         maxlines=maxlines,
         n_jobs=n_jobs,
+        intensity_threshold=intensity_threshold,
     )

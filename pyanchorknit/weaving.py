@@ -1,13 +1,13 @@
 """Weaving code."""
 import json
+from multiprocessing import Pool
 from pathlib import Path
 from typing import Dict, Tuple
-from multiprocessing import Pool
 
-import tqdm
-import numpy as np
 from cv2 import cv2
+import numpy as np
 from skimage.measure import profile_line
+import tqdm
 
 from pyanchorknit.utils import config_logger
 
@@ -48,6 +48,7 @@ def weaving(
     n_edges: int = 512,
     maxlines: int = 2000,
     n_jobs: int = 8,
+    intensity_threshold: float = 0.1,
 ):
     logger.info(f"image path: {img_path}")
     logger.info(f"number of edges: {n_edges}")
@@ -89,7 +90,7 @@ def weaving(
 
         max_intensity = max(max_intensity or 0, intensity)  # flip by color
 
-        if len(traces) > 0 and (intensity / max_intensity) < 0.10:
+        if len(traces) > 0 and (intensity / max_intensity) < intensity_threshold:
             logger.debug("Intensity below threshold")
             break
 
@@ -99,8 +100,9 @@ def weaving(
 
         p1, p2 = tuple(points[p]), tuple(points[pprime])
 
-        bw_img = cv2.line(bw_img, p1, p2, BLACK, 1)
-        white_img = cv2.line(white_img, p1, p2, BLACK, 1)
+        LINEWIDTH = 1
+        bw_img = cv2.line(bw_img, p1, p2, BLACK, LINEWIDTH)
+        white_img = cv2.line(white_img, p1, p2, BLACK, LINEWIDTH)
 
         thread_length += np.linalg.norm(points[p] - points[pprime])
         traces[(p, pprime)] = intensity
