@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyanchorknit"
-version = "0.2.0"
+version = "0.3.0"
 description = "Weaving algorithm."
 license = "MIT"
 readme = "README.md"
