@@ -116,4 +116,4 @@ def weaving(
     points_json = {i: tuple(map(int, point)) for i, point in enumerate(points)}
     traces_json = [((x, y), trace_len) for (x, y), trace_len in traces.items()]
     with open(traces_out, "w") as fp:
-        json.dump({"points": points_json, "traces_json": traces_json}, fp)
+        json.dump({"points": points_json, "traces": traces_json}, fp)
