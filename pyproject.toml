@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pyweaving"
+name = "pyanchorknit"
 version = "0.1.0"
 description = "Weaving algorithm."
 readme = "README.md"
@@ -32,10 +32,10 @@ length_sort=true
 use_parentheses=true
 include_trailing_comma=true
 force_sort_within_sections=true
-known_first_party="pyweaving"
+known_first_party="pyanchorknit"
 
 [tool.poetry.scripts]
-pyweaving = "pyweaving.cli.main:app()"
+pyanchorknit = "pyanchorknit.cli.main:app()"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -2,7 +2,7 @@ from pathlib import Path
 
 import typer
 
-from pyweaving.weaving import weaving
+from pyanchorknit.weaving import weaving
 
 app = typer.Typer()
 

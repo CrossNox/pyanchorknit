@@ -9,7 +9,7 @@ import numpy as np
 from cv2 import cv2
 from skimage.measure import profile_line
 
-from pyweaving.utils import config_logger
+from pyanchorknit.utils import config_logger
 
 logger = config_logger(__name__)
 

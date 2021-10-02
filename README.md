@@ -1,4 +1,4 @@
-# PyWeaving
+# PyAnchorKnit
 
 # Dev install
 ## Poetry

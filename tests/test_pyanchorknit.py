@@ -1,4 +1,4 @@
-from pyweaving import __version__
+from pyanchorknit import __version__
 
 
 def test_version():
