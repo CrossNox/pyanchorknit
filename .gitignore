@@ -154,6 +154,7 @@ Pipfile*
 ### Images ###
 *.png
 *.jpg
+*.jpeg
 
 ### Traces JSONs ###
 *.json
