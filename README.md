@@ -2,6 +2,10 @@
 Inspired by the work of [Petros Vrellis](https://www.instagram.com/pvrellis/). Based on [Weaver](https://github.com/alyyousuf7/Weaver).
 
 ## Installation
+### Prerequisites
+`pyanchorknit` uses `pycairo`, which requires `pkg-config` and `cairo`. Check [here](https://pycairo.readthedocs.io/en/latest/getting_started.html) for installation commands for your platform.
+
+### Install `pyanchorknit`
 Usage of [pipx](https://pypa.github.io/pipx/) is encouraged.
 
 ```bash
@@ -14,7 +18,7 @@ pyanchorknit imgs/Johannes-Vermeer-Girl-With-a-Pearl-Earring.jpg --n-jobs 16 --n
 ```
 
 ### Output image
-![Girl with a Pearl Earring](imgs/Johannes-Vermeer-Girl-With-a-Pearl-Earring-weave.png)
+<img src="imgs/Johannes-Vermeer-Girl-With-a-Pearl-Earring-weave.png" alt="drawing" width="400"/>
 
 ### Output JSON
 ```json
@@ -34,7 +38,7 @@ pyanchorknit imgs/Johannes-Vermeer-Girl-With-a-Pearl-Earring.jpg --n-jobs 16 --n
       117
     ]
   },
-  "traces_json": [
+  "traces": [
     [
       [
         0,

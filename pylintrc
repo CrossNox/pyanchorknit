@@ -1,8 +1,8 @@
 [MASTER]
-extension-pkg-allow-list=cv2
+extension-pkg-allow-list=cv2,cairo
 
 [TYPECHECK]
-generated-members=cv2
+generated-members=cv2,cairo
 
 [FORMAT]
 # Good variable names which should always be accepted, separated by a comma
