@@ -33,3 +33,8 @@ poetry install
 poetry run pre-commit install
 poetry run pre-commit install -t pre-push
 ```
+
+## Publish
+```bash
+poetry publish --build
+```
