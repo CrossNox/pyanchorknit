@@ -158,3 +158,6 @@ Pipfile*
 
 ### Traces JSONs ###
 *.json
+
+### Notebooks ###
+notebooks/
