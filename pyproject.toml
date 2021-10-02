@@ -2,7 +2,7 @@
 name = "pyanchorknit"
 version = "0.1.0"
 description = "Weaving algorithm."
-licence = "MIT"
+license = "MIT"
 readme = "README.md"
 authors = ["CrossNox <ijmermet@gmail.com>"]
 homepage = "https://github.com/CrossNox/pyanchorknit"
